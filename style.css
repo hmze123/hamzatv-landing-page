@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #009688; 
+    --primary-color: #009688;
     --primary-dark: #00796B;
     --dark-bg: #1B1725;
     --light-bg: #F5F5F5;
     --text-dark: #333;
     --text-light: #ffffff;
-    --font-family: 'Cairo', sans-serif;
+    --font-family: 'Tajawal', sans-serif; 
 }
 
 * {
@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--font-family);
-    line-height: 1.6;
+    line-height: 1.7; 
     background-color: var(--light-bg);
     color: var(--text-dark);
 }
@@ -40,14 +40,15 @@ header .logo {
 }
 
 header .logo img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin-left: 15px;
 }
 
 header .logo h1 {
     font-size: 1.8rem;
     color: var(--primary-color);
+    font-weight: 700;
 }
 
 /* Hero Section */
@@ -64,7 +65,7 @@ header .logo h1 {
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 900;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -72,7 +73,7 @@ header .logo h1 {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     max-width: 700px;
     margin: 0 auto 30px auto;
     color: #555;
@@ -101,7 +102,8 @@ header .logo h1 {
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
     margin-bottom: 50px;
     color: var(--text-dark);
 }
@@ -146,11 +148,11 @@ header .logo h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .screenshots img {
-    max-width: 250px;
+    max-width: 200px; 
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -158,6 +160,50 @@ header .logo h1 {
 
 .screenshots img:hover {
     transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    background: var(--text-light);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.contact-button.telegram {
+    background-color: #2AABEE;
+    color: white;
+}
+.contact-button.telegram:hover {
+    background-color: #1a94d6;
+}
+
+.contact-button.email {
+    background-color: #777;
+    color: white;
+}
+.contact-button.email:hover {
+    background-color: #555;
 }
 
 /* Final CTA Section */
@@ -184,6 +230,41 @@ footer {
     color: #ccc;
     text-align: center;
     padding: 20px 0;
+}
+.footer-links {
+    margin-top: 10px;
+}
+.footer-links a {
+    color: #00c3b0;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: white;
+}
+
+/* Privacy Page Content */
+.page-content {
+    padding: 60px 0;
+    background: white;
+}
+.page-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.page-content h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.page-content p, .page-content ul {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.page-content ul {
+    padding-right: 20px;
 }
 
 /* Animation */
